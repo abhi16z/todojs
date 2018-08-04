@@ -1,8 +1,9 @@
 # todojs
 
+live at <a href="abhi16z.github.io/todojs"> todojs </a>
 <b> << How to start >> </b>
 
-1. checkout branch test(as of now)
+1. checkout branch master
 2. in the directory, open command prompt(go to address bar in file explorer and type cmd and then << press enter >> )
 3. >> npm install
 4. >> npm run serves. see the output in cmd, you get an address where application is served
