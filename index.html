@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TODO</title>
+  <link rel="stylesheet" href='./todo.css'>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <header class='header'>
+    <div class='headerContent'>
+      <div class='logo'>
+        Todo List
+      </div> <hr />
+      <div id='displayTotalNumberOfTasks'></div>
+
+      <div class='search'>
+        <input type='textbox' placeholder='search tasks' class='.searchBox' onkeyup='app.onSearch()' />
+      </div>
+    </div>
+
+  </header>
+
+  <main class='main'>
+    <div class='mainContent'>
+
+      <section class='renderItems' id='displayRenderedItems'>
+        <i> No tasks has been added </i>
+      </section>
+
+    </div>
+
+
+    <!-- Add Item -->
+
+    <section class='addItems' id='addItems'>
+      <div class='addItemInputContainer'>
+        <input type='textbox' placeholder='Enter Todo Item Desciption' id='addItemTextbox' onblur='app.onTextBlur()' />
+        <div class='error' id='errorBlock'> Task description cannot be empty and may contain 120 characters excluding spaces </div>
+      </div>
+      <div class='addItemButtonContainer'>
+        <button type='submit' class='addButton' onclick='app.onAddTask()'>
+          +
+        </button>
+      </div>
+    </section>
+
+    </div>
+
+  </main>
+
+  <footer class='footer'>
+    <div class='footerContent'>
+
+      <button onClick='app.onSortByDate()'> Sort By Date</button>
+      <button class='deleteButton' onclick='app.onRemoveTask("multiple")'> X selected </button>
+      <button class='completeButton' onclick='app.onCompleteTask("multiple")'> &#10004; selected</button>
+      <button onclick='app.onUndo()'>Undo Last Action</button>
+      <button onclick='app.onReset()'>reset</button>
+
+    </div>
+
+    <span> &copy; Abhishek</span>
+  </footer>
+
+  <script src='./dist/todo.js' type="text/javascript"></script>
+</body>
+
+</html>
