@@ -119,7 +119,7 @@ class Todo {
             });
         }
         displayTotalNumberOfTasksBlock.innerHTML='Total number of tasks: '+this.taskArray.length;
-        addItemBlock.style.display = (this.taskArray.length === 10) ? 'none' : 'block';
+        addItemBlock.style.display = (this.taskArray.length === 50) ? 'none' : 'block';
         this.selectedElementIds=[];
     }
 
